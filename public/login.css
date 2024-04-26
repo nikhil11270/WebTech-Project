@@ -1,0 +1,102 @@
+body {
+    background-image: url(fiction3.jpg);
+}
+
+.form {
+    margin-top: 50px;
+    margin-left: 500px;
+    width: 500px;
+    height: 650px;
+    box-shadow: 2px 2px 100px red;
+    border-radius: 12px;
+}
+
+.sub:hover {
+    cursor: pointer;
+}
+
+::placeholder {
+    color: lightcyan;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+.h1 {
+    color: aliceblue;
+    margin-top: -20px;
+}
+
+input {
+    margin: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+    width: 300px;
+    background-color: transparent;
+    color: white;
+    font-size: large;
+}
+
+.in {
+    margin-left: 80px;
+}
+
+.already {
+    margin-left: 300px;
+}
+
+.book2 {
+    height: 160px;
+    width: 180px;
+    margin-left: 150px;
+}
+
+.login {
+    text-decoration: none;
+    padding-left: 3px;
+    color: whitesmoke;
+    font-family: cursive;
+    font-size: larger;
+}
+
+.in:focus {
+    border-bottom: 1px solid white;
+    outline: none;
+}
+
+
+input[type="submit"].signn {
+    display: inline-block;
+    background-color: red;
+    margin-left: 190px;
+    box-shadow: 15px 15px 180px white;
+    padding-bottom: 5px;
+    height: 40px;
+    width: 120px;
+    border-radius: 18px;
+    color: aliceblue;
+    font-size: larger;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+input[type="submit"].signn:hover {
+    box-shadow: 10px 10px 200px black;
+}
+
+.error{
+    color: white;
+    font-size: 15px;
+   
+    padding-left: 140px;
+}
+.perror{
+    color: white;
+    font-size: 15px;
+   
+    padding-left: 110px;
+}
+
+

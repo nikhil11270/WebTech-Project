@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+
+<head>
+    <link rel="stylesheet" href="Experiment4css.css">
+    <link rel="stylesheet" href="ionicons.min.css">
+
+
+</head>
+
+<body ng-controller="ctrl">
+    <header>
+        <img src="bookk2.png" class="picc">
+    </header>
+    <div class="navigation">
+        <nav>
+            <a href="#fiction" class="navmenu">Fiction</a>
+            <a href="#nonfiction" class="navmenu">Non-Fiction</a>
+            <a href="#poetry" class="navmenu">Poetry</a>
+            <a href="#children" class="navmenu">Children</a>
+            <a href="#genre" class="navmenu">Genre</a>
+            <a href="#academic" class="navmenu">Academic</a>
+        </nav>
+    </div>
+    <div class="search">
+        <input type="text" placeholder="search books ...." class="searchh" ng-model="nikhil">
+        <ul ng-if="nikhil" class="drop">
+            <li ng-repeat="book in books| filter:swl">{{book}}</li>
+        </ul>
+    </div>
+    <div class="bodyy">
+        <div class="menu">
+            <ul>
+                <li class="li"><a class="link1" href="#">Home</a></li>
+                <li class="li"><a class="link1" href="https://www.nbtindia.gov.in/catalogues__online-loginregister.aspx">Login/Sign Up</a></li>
+                <li class="li"><a class="link1" href="https://www.nbtindia.gov.in/">About Us</a></li>
+                <li class="li"><a class="link1" href="https://www.jayabhattacharjirose.com/tag/national-book-trust/">Blog</a></li>
+                <li class="li"><a class="link1" href="https://www.nbtindia.gov.in/popup-contactus.aspx">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="content1">
+            <div class="con1" id="fiction">
+                <h2>FICTION</h2>
+                <p>Step into the realm of imagination with our captivating collection of fiction books. Dive into the magical world of J.K. Rowling's 'Harry Potter' series, where wizards and mythical creatures abound. Explore the dystopian future of George Orwell's '1984,' or immerse yourself in the romantic intrigues of Jane Austen's 'Pride and Prejudice.' Discover Ray Bradbury's 'Fahrenheit 451,' a thought-provoking tale set in a world where books are outlawed. From fantasy to romance, our fiction section offers something for every reader seeking to escape reality and embark on a literary adventure."</p>
+            </div>
+            <div class="con1" id="nonfiction">
+                <h2>NON-FICTION</h2>
+                <p>"Dive into the realm of reality with our curated collection of non-fiction books. Explore fascinating topics such as history, science, biographies, and self-help. Uncover the secrets of the universe with Stephen Hawking's 'A Brief History of Time,' or gain insights into personal development with Dale Carnegie's 'How to Win Friends and Influence People.' From captivating memoirs to informative guides, our non-fiction section offers a wealth of knowledge to enrich your mind and inspire curiosity."</p>
+            </div>
+            <div class="con1" id="poetry">
+                <h2>POETRY</h2>
+                <p>"Embark on a journey through the soul with our poetry collection. Explore the depths of emotion, beauty, and imagination within the pages of our diverse selection. From the timeless verses of William Shakespeare to the modern musings of Maya Angelou, experience the power of language to evoke feelings and stir the heart. Whether you seek solace, inspiration, or simply the joy of language, our poetry section invites you to discover the magic of verse."</p>
+            </div>
+        </div>
+        <div class="content2">
+            <div class="con1" id="children">
+                <h2>Children's Books</h2>
+                <p>"Spark young minds with wonder and delight in our enchanting collection of children's books. From beloved classics to modern tales, ignite imaginations and foster a love for reading. Dive into the whimsical world of Dr. Seuss with 'The Cat in the Hat,' or join Harry, Hermione, and Ron on magical adventures in J.K. Rowling's 'Harry Potter' series. With vibrant illustrations and captivating stories, our children's section promises endless adventures and cherished memories for kids of all ages."</p>
+            </div>
+            <div class="con1" id="genre">
+                <h2>Genre-specific</h2>
+                <p>"Discover the magic of genre-specific literature as you explore our curated collections, each offering a unique literary experience. Lose yourself in the heart-pounding suspense of our mystery and thriller section, where every twist and turn keeps you on the edge of your seat. Journey to fantastical realms with our fantasy collection, where dragons soar and heroes rise to meet their destinies. Indulge in tales of love and passion with our romance novels, where happily-ever-afters await around every corner. From sci-fi adventures to spine-chilling horror, our genre-specific sections invite you to escape into worlds of imagination and wonder."</p>
+            </div>
+            <div class="con1" id="academic">
+                <h2>Academic</h2>
+                <p>"Expand your intellectual horizons with our academic collection, meticulously curated to inspire learning and discovery. Delve into scholarly works covering a multitude of disciplines, from philosophy and psychology to mathematics and sociology. Engage with groundbreaking theories in Steven Pinker's 'The Blank Slate,' or explore the intricacies of economics with Thomas Piketty's 'Capital in the Twenty-First Century.' Whether you're a student, educator, or lifelong learner, our academic section offers a wealth of knowledge to fuel intellectual curiosity and scholarly pursuits."</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>We are dedicated to providing a diverse and enriching collection of books for every reader.</p>
+                <div class="contact">
+                    <span><i class="ion-ios-location-outline"></i> Address</span>
+                    <span><i class="ion-ios-email-outline"></i> Email</span>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Fiction</a></li>
+                    <li><a href="#">Non-Fiction</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="ion-logo-facebook"></i></a>
+                    <a href="#"><i class="ion-logo-twitter"></i></a>
+                    <a href="#"><i class="ion-logo-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 National Book Trust. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

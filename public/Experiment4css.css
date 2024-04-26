@@ -1,0 +1,271 @@
+body{
+    background-image: url(./fiction.jpg);
+    background-size: cover;
+}
+.bodyy{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+.picc{
+    height:200px;
+    width:200px;
+    margin-top: -25px;
+    margin-bottom: -50px;
+    margin-left: 620px;
+}
+
+.search{
+    margin-left: 250px;
+    margin-right: 300px;
+    margin-bottom: -60px;
+    
+}
+.searchh{
+    width:1000px;
+    height: 50px;
+    border-radius: 40px;
+    font-size: larger;
+    font-family: cursive;
+    padding-left: 10px;
+    box-shadow: 2px 2px 2px 2px red;
+    border-color: brown;
+    
+}
+
+.drop {
+    position: absolute;
+    z-index: 1;
+    width: 1000px;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffe5e5; 
+    margin-top: -1px;
+    padding: 0;
+    list-style-type: none;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif; 
+}
+
+.drop li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    border-bottom: 1px solid #e0e0e0; 
+    font-size: 16px; 
+    color: #333; 
+}
+
+.drop li:last-child {
+    border-bottom: none; 
+}
+
+.drop li:hover {
+    background-color: #ffcccc; 
+    color: #e60000; 
+}
+
+.navigation{
+    margin-top: 40px;
+    margin-bottom: 110px;
+}
+.navmenu{
+    font-size:20px;
+    text-decoration: none;
+    padding: 70px;
+    color: beige;
+    padding-right: 90px;
+    transition: transform 0.2s ease;
+   
+
+    
+   
+}
+.navmenu:hover{
+    border-bottom:solid 3px red;
+    border-radius: 0px 0px 50px 0px;
+    transform: scaleY(1.2);
+
+
+    
+}
+.title{
+    display:inline-block;
+    background-color: lightgray;
+    width: 300px;
+    height: 50px;
+    border-radius: 15px 15px 10px 10px;
+    padding: 2px;
+    position: fixed;
+    top:0;
+
+}
+.link1{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bolder;
+    color: aliceblue;
+    font-size: 20px;
+    margin-top: 40px;
+   
+   
+
+    
+   
+}
+ul{
+    list-style-type: none;
+}
+.li{
+    margin-bottom: 20px;
+    margin-top: 12px;
+    background-color:darkred;
+    width: 220px;
+    height: 100px;
+    text-align: center;
+    box-shadow: 5px 5px 3px;
+    border-radius: 0px 70px 70px 0px;
+    margin-left: -59px;
+    padding-left: 25px;
+    padding-right: 10px;
+    transition: transform 0.3s;
+    
+}
+.li:hover{
+    box-shadow:15px 15px 19px ;
+    transform: scaleX(1.2);
+    
+}
+
+
+.content1{
+    margin-left: 200px;
+    margin-top: 50px;
+    
+   
+
+   
+   
+}
+.content2{
+  margin-left: 200px;
+  margin-top: 50px;
+  
+  
+  
+}
+.con1 {
+    margin-left: 3px;
+    height: 500px;
+    width: 400px;
+    border-radius: 10px;
+    margin-right: 2px;
+    color: white;
+     background-image: url(./fiction.jpg); 
+    box-shadow: 3px 3px 30px white;
+    transition:  0.001s ease;
+    border:2px  solid darkred;
+    margin-top: 31px;
+    
+    
+    
+    
+   
+    
+    
+}
+.con1:hover{
+    box-shadow: 5px 6px 40px red;
+    cursor:grab;
+}
+
+h2{
+    text-align: center;
+    text-decoration:underline;
+    font-family: cursive;
+    padding-top: 20px;
+}
+
+p{
+    padding: 8px;
+    font-size: larger;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    margin-top: 30px;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    padding: 20px;
+    flex: 1;
+}
+
+.footer-section h3 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section span {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #aaa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+.social-links a {
+    color: #aaa;
+    margin-right: 10px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    background-color: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
